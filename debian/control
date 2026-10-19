@@ -1,0 +1,33 @@
+Source: vcpkg-tool
+Section: devel
+Maintainer: Jan-Joost Spanjers <oss@hiberis.nl>
+Build-Depends:
+ cmake,
+ debhelper-compat (= 14),
+ git,
+ libcurl4-openssl-dev,
+ libfmt-dev,
+Standards-Version: 4.7.4
+Homepage: https://github.com/microsoft/vcpkg-tool
+#Vcs-Browser: https://salsa.debian.org/debian/vcpkg-tool
+#Vcs-Git: https://salsa.debian.org/debian/vcpkg-tool.git
+
+Package: vcpkg-tool
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Vcpkg helps you manage C and C++ libraries
+ vcpkg is a free and open-source C/C++ package manager maintained by
+ Microsoft and the C++ community.
+ .
+ Initially launched in 2016 as a tool for assisting developers in
+ migrating their projects to newer versions of Visual Studio, vcpkg has
+ evolved into a cross-platform tool used by developers on Windows,
+ macOS, and Linux. vcpkg has a large collection of open-source libraries
+ and enterprise-ready features designed to facilitate your development
+ process with support for any build and project systems.
+ .
+ vcpkg is a C++ tool at heart and is written in C++ with scripts in
+ CMake. It is designed from the ground up to address the unique pain
+ points C/C++ developers experience.
