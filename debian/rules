@@ -8,6 +8,6 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
+	-DVCPKG_DEPENDENCY_CMAKERC=ON \
 	-DVCPKG_DEPENDENCY_EXTERNAL_FMT=ON \
-	-DFETCHCONTENT_SOURCE_DIR_CMAKERC=$(CURDIR)/debian/third_party/cmakerc/cmrc-2.0.1 \
 	-DVCPKG_LIBCURL_DLSYM=OFF

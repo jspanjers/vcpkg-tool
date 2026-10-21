@@ -7,6 +7,7 @@ Build-Depends:
  git,
  libcurl4-openssl-dev,
  libfmt-dev,
+ cmakerc,
 Standards-Version: 4.7.4
 Homepage: https://github.com/microsoft/vcpkg-tool
 #Vcs-Browser: https://salsa.debian.org/debian/vcpkg-tool
